@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#10375C',
+              },
+              fontFamily: {
+                poppins: ['Poppins'],
+              },
+            }
+          }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+        $(document).ready(function() {
+            $('#hamburger').click(function() {
+                $('#mobile-menu').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="shadow-md">
+        <div class="w-full bg-primary top-0 right-0 h-14 text-white flex justify-between items-center px-4 md:px-6 font-poppins">
+            <div class="text-lg font-semibold md:text-xl">Expense Tracker</div>
+            <nav class="text-base hidden md:flex gap-6">
+                <a href="../index.php" class="hover:text-sky-500 text-white">Home</a>
+                <a href="../pages/view.php" class="hover:text-sky-500 text-white">Catat</a>
+                <a href="../index.php#tips" class="hover:text-sky-500 text-white">Tips</a>
+            </nav>
+    
+            <button class="md:hidden" id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-2" >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>              
+            </button>
+        </div>
+
+        <div id="mobile-menu" class=" bg-primary text-white hidden md:hidden absolute w-full z-10">
+            <a href="../index.php" class="block py-3 px-4 text-sm hover:bg-sky-700 font-poppins">Home</a>
+            <a href="../pages/view.php" class="block py-3 px-4 text-sm hover:bg-sky-700 font-poppins">Catat</a>
+            <a href="../index.php#tips" class="block py-3 px-4 text-sm hover:bg-sky-700 font-poppins">Tips</a>
+        </div>
+    </header>
+</body>
+</html>
