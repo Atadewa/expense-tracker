@@ -1,9 +1,6 @@
 # Expense Tracker
 
-<div class="container">
-  <img src="./img/overview/overview-1.png" class="responsive-img">
-  <img src="./img/overview/overview-2.png" class="responsive-img">
-</div>
+![overview](./img/overview/overview-2.png)
 
 <style>
   @media (min-width: 768px) {
