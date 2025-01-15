@@ -2,19 +2,6 @@
 
 ![overview](./img/overview/overview-2.png)
 
-<style>
-  @media (min-width: 768px) {
-    .container {
-      display: flex;
-      gap: 10px;
-    }
-    .responsive-img {
-      width: 50%;
-      max-width: 100%;
-    }
-  }
-</style>
-
 ## Deskripsi Singkat
 
 **Expense Tracker** adalah aplikasi web sederhana yang dirancang untuk membantu pengguna mencatat pengeluaran mereka secara efektif. Aplikasi ini dibangun menggunakan PHP untuk backend, dengan database SQL Server sebagai penyimpanan data. Aplikasi ini mencakup fungsi CRUD untuk mengelola pengeluaran serta komponen header dan footer yang dapat digunakan kembali.
